@@ -32,10 +32,10 @@ public class Main {
                 }
             }
         }
-        System.out.println("hits: " + hits);
         System.out.println("sixes on hit " + hitSix);
-        System.out.println("wounds: " + wounds);
+        System.out.println("hits: " + hits);
         System.out.println("sixes on wound " + woundSix);
+        System.out.println("wounds: " + wounds);
     }
 
     public static void main(String[] args) {
