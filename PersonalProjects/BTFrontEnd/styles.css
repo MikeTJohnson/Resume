@@ -1,0 +1,17 @@
+#buttons {
+    background-color: lightblue;
+    left: 5px;
+    top: 5px;
+    width: 300px;
+    height: 700px;
+    border: 5px black;
+}
+
+#display {
+    background-color: lightgray;
+    top: 5px;
+    left: 400px;
+    width: 700px;
+    height: 700px;
+    border: 5px black;
+}

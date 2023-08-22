@@ -8,5 +8,6 @@ public class SmallLaser extends DirectWeapon{
         sRange = 1;
         mRange = 2;
         lRange = 3;
+        name = "small laser";
     }
 }

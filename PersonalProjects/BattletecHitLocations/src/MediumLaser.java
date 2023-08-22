@@ -7,5 +7,6 @@ public class MediumLaser extends DirectWeapon{
         sRange = 3;
         mRange = 6;
         lRange = 9;
+        name = "medium laser";
     }
 }

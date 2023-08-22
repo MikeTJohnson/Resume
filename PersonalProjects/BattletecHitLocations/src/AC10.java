@@ -7,5 +7,6 @@ public class AC10 extends DirectWeapon{
         sRange = 5;
         mRange = 10;
         lRange = 15;
+        name = "AC-10";
     }
 }
