@@ -1,0 +1,49 @@
+﻿<Properties StartupConfiguration="{F7779DCA-6458-4556-ABC4-E8D6A159851E}|Default">
+  <MonoDevelop.Ide.ItemProperties.LMS PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="LMS/Models/LMSModels/Class.cs">
+    <Files>
+      <File FileName="LMS/Program.cs" />
+      <File FileName="LMS/Models/LMSModels/LMSContext.cs" />
+      <File FileName="LMS/Areas/Identity/Pages/Account/Register.cshtml" />
+      <File FileName="LMS/Areas/Identity/Pages/Account/Register.cshtml.cs" />
+      <File FileName="LMS/Controllers/AdministratorController.cs" Line="1" Column="1" />
+      <File FileName="LMS/Controllers/CommonController.cs" />
+      <File FileName="LMS/Controllers/ProfessorController.cs" />
+      <File FileName="LMS/Models/LMSModels/Submission.cs" />
+      <File FileName="LMS/Areas/Identity/Pages/Account/Login.cshtml.cs" />
+      <File FileName="LMS/Controllers/HomeController.cs" />
+      <File FileName="LMS/Controllers/StudentController.cs" />
+      <File FileName="LMS/Models/ApplicationUser.cs" />
+      <File FileName="LMS/Models/LMSModels/Course.cs" Line="1" Column="1" />
+      <File FileName="LMS/Models/LMSModels/Class.cs" Line="1" Column="1" />
+      <File FileName="LMS/Models/LMSModels/Department.cs" />
+      <File FileName="LMS/Models/LMSModels/AssignmentCategory.cs" />
+      <File FileName="LMS/Models/LMSModels/Assignment.cs" />
+      <File FileName="LMS/Models/LMSModels/Administrator.cs" Line="1" Column="1" />
+      <File FileName="LMS/Models/LMSModels/Enrollment.cs" />
+      <File FileName="LMS/Models/LMSModels/Student.cs" />
+      <File FileName="LMS/Models/LMSModels/Professor.cs" />
+      <File FileName="LMS/LMS.csproj" />
+      <File FileName="../../../.microsoft/usersecrets/41584a40-6ee0-45ec-8d07-9675f843860e/secrets.json" />
+      <File FileName="LMS/Views/Administrator/Course.cshtml" Line="1" Column="1" />
+      <File FileName="LMS/Views/Home/Index.cshtml" />
+      <File FileName="LMS/Views/Home/Privacy.cshtml" />
+      <File FileName="LMS/Views/Administrator/Department.cshtml" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="LMS" expanded="True">
+            <Node name="LMS" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
