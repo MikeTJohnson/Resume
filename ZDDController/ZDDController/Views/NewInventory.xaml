@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ZDDController.Views.NewInventory"
+             Title="NewInventory">
+
+     <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Label
+                Text="ZDD Tools"
+                SemanticProperties.HeadingLevel="Level2"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+            <Button
+                x:Name="inventory"
+                Text="New Inventory"
+                SemanticProperties.Hint="Takes you to the add inventory page"
+                Clicked="onInventoryButtonClicked"
+                HorizontalOptions="Center"
+                MaximumWidthRequest="150"
+                MinimumWidthRequest="150"/>
+
+            <Button
+                x:Name="ttf"
+                Text="New TTF"
+                SemanticProperties.Hint="Takes you to the add TTF page"
+                Clicked="onTTFButtonClicked"
+                HorizontalOptions="Center"
+                MaximumWidthRequest="150"
+                MinimumWidthRequest="150"/>
+
+         <Button x:Name="home"
+                Text="Home"
+                SemanticProperties.Hint="takes the user back to the main page"
+                Clicked="onHomeButtonClicked"
+                HorizontalOptions="End"
+                VerticalOptions="End"
+                />
+
+        </VerticalStackLayout>
+</ContentPage>
