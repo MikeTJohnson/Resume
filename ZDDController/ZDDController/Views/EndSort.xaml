@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ZDDController.Views.EndSort"
+             Title="EndSort">
+
+    <VerticalStackLayout
+        Spacing="25"
+        Padding="30,0"
+        VerticalOptions="Center">
+
+        <Entry x:Name="eID"
+               Placeholder="Employee ID"
+               MaximumWidthRequest="300"
+               />
+
+        <Picker x:Name="picker"
+                Title="Choose FO"
+                MaximumWidthRequest="300"
+                />
+
+        <VerticalStackLayout
+        Spacing="0"
+        Padding="30,0"
+        VerticalOptions="Center">
+
+            <Label Text="End Date"
+                    HorizontalOptions="Center"/>
+
+            <DatePicker Height="25"
+                    Margin="42,26,0,0"
+                    HorizontalOptions="Center"
+                    x:Name="endDate"   
+                    Width="115"/>
+
+            <TimePicker
+                x:Name="endTime"
+                HorizontalOptions="Center"/>
+
+        </VerticalStackLayout>
+
+        <Button
+                x:Name="addDefect"
+                Text="Add Defect"
+                Clicked="addDefectEntry"
+                HorizontalOptions="Center"
+                MaximumWidthRequest="150"
+                MinimumWidthRequest="150"/>
+
+        <StackLayout
+            x:Name="defectArea"
+            HorizontalOptions="Center">
+
+        </StackLayout>
+
+        <Label 
+            Text="Are you completing the sort?"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <HorizontalStackLayout
+            HorizontalOptions="Center">
+
+            <RadioButton
+                x:Name="finish"
+                Margin="5"
+                Content="Completing"
+                BackgroundColor="Gray"/>
+
+            <RadioButton
+                x:Name="notFinish"
+                Margin="5"
+                Content="Not Completing"
+                BackgroundColor="Gray"/>
+
+        </HorizontalStackLayout>
+
+        <Entry
+            x:Name="comment"
+            Placeholder="comments"
+            MaximumWidthRequest="400"
+            />
+
+        <Button
+                x:Name="submitButton"
+                Text="Submit"
+                SemanticProperties.Hint="submits the form"
+                Clicked="onSubmitButtonClicked"
+                HorizontalOptions="Center"
+                MaximumWidthRequest="150"
+                MinimumWidthRequest="150"/>
+
+        <Label 
+            Text="Welcome to .NET MAUI!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Button x:Name="home"
+                Text="Home"
+                SemanticProperties.Hint="takes the user back to the main page"
+                Clicked="onHomeButtonClicked"
+                HorizontalOptions="End"
+                VerticalOptions="End"
+                />
+
+    </VerticalStackLayout>
+</ContentPage>
