@@ -1,0 +1,149 @@
+is_global = true
+build_property.TargetFramework = net7.0-maccatalyst
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ZDDController
+build_property.ProjectDir = /Users/michaeljohnson/MSD/MSDrepo/MSDrepo/capstone/ZDDController/ZDDController/
+
+[/Users/michaeljohnson/MSD/MSDrepo/MSDrepo/capstone/ZDDController/ZDDController/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ZDDController.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[/Users/michaeljohnson/MSD/MSDrepo/MSDrepo/capstone/ZDDController/ZDDController/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ZDDController.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[/Users/michaeljohnson/MSD/MSDrepo/MSDrepo/capstone/ZDDController/ZDDController/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ZDDController.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Colors.xaml
+
+[/Users/michaeljohnson/MSD/MSDrepo/MSDrepo/capstone/ZDDController/ZDDController/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ZDDController.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Styles.xaml
+
+[/Users/michaeljohnson/MSD/MSDrepo/MSDrepo/capstone/ZDDController/ZDDController/Views/AddEmployee.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ZDDController.Views.AddEmployee.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/AddEmployee.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/AddEmployee.xaml
+
+[/Users/michaeljohnson/MSD/MSDrepo/MSDrepo/capstone/ZDDController/ZDDController/Views/AddInventory.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ZDDController.Views.AddInventory.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/AddInventory.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/AddInventory.xaml
+
+[/Users/michaeljohnson/MSD/MSDrepo/MSDrepo/capstone/ZDDController/ZDDController/Views/AddTTF.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ZDDController.Views.AddTTF.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/AddTTF.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/AddTTF.xaml
+
+[/Users/michaeljohnson/MSD/MSDrepo/MSDrepo/capstone/ZDDController/ZDDController/Views/DailyReport.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ZDDController.Views.DailyReport.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/DailyReport.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/DailyReport.xaml
+
+[/Users/michaeljohnson/MSD/MSDrepo/MSDrepo/capstone/ZDDController/ZDDController/Views/EditEmployee.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ZDDController.Views.EditEmployee.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/EditEmployee.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/EditEmployee.xaml
+
+[/Users/michaeljohnson/MSD/MSDrepo/MSDrepo/capstone/ZDDController/ZDDController/Views/EditPart.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ZDDController.Views.EditPart.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/EditPart.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/EditPart.xaml
+
+[/Users/michaeljohnson/MSD/MSDrepo/MSDrepo/capstone/ZDDController/ZDDController/Views/EditSort.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ZDDController.Views.EditSort.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/EditSort.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/EditSort.xaml
+
+[/Users/michaeljohnson/MSD/MSDrepo/MSDrepo/capstone/ZDDController/ZDDController/Views/EmployeeReview.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ZDDController.Views.EmployeeReview.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/EmployeeReview.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/EmployeeReview.xaml
+
+[/Users/michaeljohnson/MSD/MSDrepo/MSDrepo/capstone/ZDDController/ZDDController/Views/EndSort.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ZDDController.Views.EndSort.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/EndSort.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/EndSort.xaml
+
+[/Users/michaeljohnson/MSD/MSDrepo/MSDrepo/capstone/ZDDController/ZDDController/Views/EndSpecialSort.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ZDDController.Views.EndSpecialSort.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/EndSpecialSort.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/EndSpecialSort.xaml
+
+[/Users/michaeljohnson/MSD/MSDrepo/MSDrepo/capstone/ZDDController/ZDDController/Views/GenTools.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ZDDController.Views.GenTools.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/GenTools.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/GenTools.xaml
+
+[/Users/michaeljohnson/MSD/MSDrepo/MSDrepo/capstone/ZDDController/ZDDController/Views/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ZDDController.Views.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/MainPage.xaml
+
+[/Users/michaeljohnson/MSD/MSDrepo/MSDrepo/capstone/ZDDController/ZDDController/Views/ManTools.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ZDDController.Views.ManTools.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/ManTools.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/ManTools.xaml
+
+[/Users/michaeljohnson/MSD/MSDrepo/MSDrepo/capstone/ZDDController/ZDDController/Views/NewInventory.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ZDDController.Views.NewInventory.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/NewInventory.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/NewInventory.xaml
+
+[/Users/michaeljohnson/MSD/MSDrepo/MSDrepo/capstone/ZDDController/ZDDController/Views/NewPart.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ZDDController.Views.NewPart.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/NewPart.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/NewPart.xaml
+
+[/Users/michaeljohnson/MSD/MSDrepo/MSDrepo/capstone/ZDDController/ZDDController/Views/PayrollReport.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ZDDController.Views.PayrollReport.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/PayrollReport.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/PayrollReport.xaml
+
+[/Users/michaeljohnson/MSD/MSDrepo/MSDrepo/capstone/ZDDController/ZDDController/Views/SampleSort.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ZDDController.Views.SampleSort.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/SampleSort.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/SampleSort.xaml
+
+[/Users/michaeljohnson/MSD/MSDrepo/MSDrepo/capstone/ZDDController/ZDDController/Views/StartSort.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ZDDController.Views.StartSort.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/StartSort.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/StartSort.xaml
+
+[/Users/michaeljohnson/MSD/MSDrepo/MSDrepo/capstone/ZDDController/ZDDController/Views/StartSpecialSort.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ZDDController.Views.StartSpecialSort.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/StartSpecialSort.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/StartSpecialSort.xaml

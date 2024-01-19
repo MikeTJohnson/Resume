@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ZDDController.MainPage">
+
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Label
+                Text="ZDD Tools"
+                SemanticProperties.HeadingLevel="Level2"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+            <Button
+                x:Name="genTools"
+                Text="General Tools"
+                SemanticProperties.Hint="Takes you to the general tools"
+                Clicked="onGenButtonClicked"
+                HorizontalOptions="Center"
+                MaximumWidthRequest="150"
+                MinimumWidthRequest="150"/>
+
+            <Button
+                x:Name="manTools"
+                Text="Manager Tools"
+                SemanticProperties.Hint="Takes you to the manager tools"
+                Clicked="onManButtonClicked"
+                HorizontalOptions="Center"
+                MaximumWidthRequest="150"
+                MinimumWidthRequest="150"/>
+
+        </VerticalStackLayout>
+
+</ContentPage>
+
