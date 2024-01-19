@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "585470401357",
+    "project_id": "drawsome-218c3",
+    "storage_bucket": "drawsome-218c3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:585470401357:android:4ab226d600183d20c33504",
+        "android_client_info": {
+          "package_name": "com.example.drawingapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAJBN-3Amp5eKDGAjuv0DB-D2m7e1DqRs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

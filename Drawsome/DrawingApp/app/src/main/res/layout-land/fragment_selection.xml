@@ -1,0 +1,127 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.SelectionFragment"
+    >
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/strokeSlider"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:value="5.0"
+        android:valueFrom="5.0"
+        android:valueTo="80.0"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/penActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:contentDescription="@string/pen_action_button"
+        android:enabled="true"
+        android:focusable="true"
+        android:src="@drawable/pen"
+        app:backgroundTint="@color/gray_400"
+        app:fabSize="auto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/circleActionButton"
+        app:maxImageSize="32dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/circleActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:contentDescription="@string/circle_action_button"
+        android:enabled="true"
+        android:focusable="true"
+        android:src="@android:drawable/ic_notification_overlay"
+        app:backgroundTint="@color/gray_400"
+        app:fabSize="auto"
+        app:layout_constraintBottom_toTopOf="@+id/squareActionButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/penActionButton"
+        app:maxImageSize="32dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/squareActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:contentDescription="@string/square_action_button"
+        android:enabled="true"
+        android:focusable="true"
+        android:src="@drawable/square"
+        app:backgroundTint="@color/gray_400"
+        app:fabSize="auto"
+        app:layout_constraintBottom_toTopOf="@+id/strokeWidthActionButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circleActionButton"
+        app:maxImageSize="46dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/strokeWidthActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:contentDescription="@string/stroke_width_action_button"
+        android:enabled="true"
+        android:focusable="true"
+        android:src="@drawable/baseline_line_weight_24"
+        app:backgroundTint="@color/gray_400"
+        app:fabSize="auto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/squareActionButton"
+        app:layout_constraintBottom_toTopOf="@+id/colorActionButton"
+        app:maxImageSize="32dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/colorActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:contentDescription="@string/color_action_button"
+        android:enabled="true"
+        android:focusable="true"
+        android:src="@drawable/splat"
+        app:backgroundTint="@color/gray_400"
+        app:fabSize="auto"
+        app:layout_constraintBottom_toTopOf="@+id/strokeSlider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/strokeWidthActionButton"
+        app:maxImageSize="46dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/marbleActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:clickable="true"
+        android:contentDescription="@string/pen_action_button"
+        android:enabled="true"
+        android:focusable="true"
+        android:src="@drawable/baseline_sensors_24"
+        app:backgroundTint="@color/gray_400"
+        app:fabSize="auto"
+        app:layout_constraintBottom_toTopOf="@+id/strokeSlider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.018"
+        app:layout_constraintStart_toEndOf="@+id/penActionButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.501"
+        app:maxImageSize="32dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
