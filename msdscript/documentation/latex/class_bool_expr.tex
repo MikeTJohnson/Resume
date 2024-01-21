@@ -1,0 +1,141 @@
+\hypertarget{class_bool_expr}{}\doxysection{Bool\+Expr Class Reference}
+\label{class_bool_expr}\index{BoolExpr@{BoolExpr}}
+
+
+an expression that represents true or false  
+
+
+
+
+{\ttfamily \#include $<$Expr.\+hpp$>$}
+
+Inheritance diagram for Bool\+Expr\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_bool_expr}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_bool_expr_a7ddfe928009c6d050cfcaf2f04c16f4f}{Bool\+Expr}} (bool tof)
+\begin{DoxyCompactList}\small\item\em The contained value of the expression. Must be true or false. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_bool_expr_ae4b19b8341f97246898dddd0e37a265b}{equals}} (PTR(Expr) e)
+\begin{DoxyCompactList}\small\item\em Evaluates whether this expression is equal to another expression. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_bool_expr_a4d413927def34927dcfcaa7a826de546}\label{class_bool_expr_a4d413927def34927dcfcaa7a826de546}} 
+{\bfseries PTR} (Val) interp(PTR(Env) env)
+\item 
+bool \mbox{\hyperlink{class_bool_expr_a34faf71bb1064e3b6bfe24f7624a29ab}{has\+Variable}} ()
+\begin{DoxyCompactList}\small\item\em Determines if the expression contains a variable. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bool_expr_ac09bb49f017cb16df85e287247b669b0}{print}} (std\+::ostream \&)
+\begin{DoxyCompactList}\small\item\em Prints the boolean expression to the output destination. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bool_expr_a86e328b60b3765ba712f2d45c05a7b7a}{pretty\+Print}} (std\+::ostream \&, \mbox{\hyperlink{_expr_8hpp_a10b23a54991ee1aac71573c5fb77a25b}{Expr\+Prec}}, std\+::streampos, bool)
+\begin{DoxyCompactList}\small\item\em Prints the boolean expression without unneccessary parantheses. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_bool_expr_ad1ab1bcd4e654c5d93b2219ab46ff086}\label{class_bool_expr_ad1ab1bcd4e654c5d93b2219ab46ff086}} 
+bool {\bfseries value}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+an expression that represents true or false 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_bool_expr_a7ddfe928009c6d050cfcaf2f04c16f4f}\label{class_bool_expr_a7ddfe928009c6d050cfcaf2f04c16f4f}} 
+\index{BoolExpr@{BoolExpr}!BoolExpr@{BoolExpr}}
+\index{BoolExpr@{BoolExpr}!BoolExpr@{BoolExpr}}
+\doxysubsubsection{\texorpdfstring{BoolExpr()}{BoolExpr()}}
+{\footnotesize\ttfamily Bool\+Expr\+::\+Bool\+Expr (\begin{DoxyParamCaption}\item[{bool}]{tof }\end{DoxyParamCaption})}
+
+
+
+The contained value of the expression. Must be true or false. 
+
+Boolean expression constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em tof} & The value to initialize the expression with. Must be true or false \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_bool_expr_ae4b19b8341f97246898dddd0e37a265b}\label{class_bool_expr_ae4b19b8341f97246898dddd0e37a265b}} 
+\index{BoolExpr@{BoolExpr}!equals@{equals}}
+\index{equals@{equals}!BoolExpr@{BoolExpr}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily bool Bool\+Expr\+::equals (\begin{DoxyParamCaption}\item[{PTR(Expr)}]{e }\end{DoxyParamCaption})}
+
+
+
+Evaluates whether this expression is equal to another expression. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$e} & The expression to compare for equivalence \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the expressions are equal, false if the expressions are not equal 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bool_expr_a34faf71bb1064e3b6bfe24f7624a29ab}\label{class_bool_expr_a34faf71bb1064e3b6bfe24f7624a29ab}} 
+\index{BoolExpr@{BoolExpr}!hasVariable@{hasVariable}}
+\index{hasVariable@{hasVariable}!BoolExpr@{BoolExpr}}
+\doxysubsubsection{\texorpdfstring{hasVariable()}{hasVariable()}}
+{\footnotesize\ttfamily bool Bool\+Expr\+::has\+Variable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Determines if the expression contains a variable. 
+
+\begin{DoxyReturn}{Returns}
+Always returns false for boolean expressions 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bool_expr_a86e328b60b3765ba712f2d45c05a7b7a}\label{class_bool_expr_a86e328b60b3765ba712f2d45c05a7b7a}} 
+\index{BoolExpr@{BoolExpr}!prettyPrint@{prettyPrint}}
+\index{prettyPrint@{prettyPrint}!BoolExpr@{BoolExpr}}
+\doxysubsubsection{\texorpdfstring{prettyPrint()}{prettyPrint()}}
+{\footnotesize\ttfamily void Bool\+Expr\+::pretty\+Print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out,  }\item[{\mbox{\hyperlink{_expr_8hpp_a10b23a54991ee1aac71573c5fb77a25b}{Expr\+Prec}}}]{prec,  }\item[{std\+::streampos}]{pos,  }\item[{bool}]{tof }\end{DoxyParamCaption})}
+
+
+
+Prints the boolean expression without unneccessary parantheses. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & The output destination \\
+\hline
+{\em prec} & The precedence of the expression \\
+\hline
+{\em pos} & The current position of the stream \\
+\hline
+{\em tof} & Boolean determining if this method needs to add parantheses \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Always throws an exception for boolean expressions 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bool_expr_ac09bb49f017cb16df85e287247b669b0}\label{class_bool_expr_ac09bb49f017cb16df85e287247b669b0}} 
+\index{BoolExpr@{BoolExpr}!print@{print}}
+\index{print@{print}!BoolExpr@{BoolExpr}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Bool\+Expr\+::print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out }\end{DoxyParamCaption})}
+
+
+
+Prints the boolean expression to the output destination. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & the output destination \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/michaeljohnson/\+MSD/\+MSDScript/msdscript/msdscript/\mbox{\hyperlink{_expr_8hpp}{Expr.\+hpp}}\item 
+/\+Users/michaeljohnson/\+MSD/\+MSDScript/msdscript/msdscript/\mbox{\hyperlink{_expr_8cpp}{Expr.\+cpp}}\end{DoxyCompactItemize}

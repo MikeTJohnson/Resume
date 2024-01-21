@@ -1,0 +1,122 @@
+\hypertarget{class_num_val}{}\doxysection{Num\+Val Class Reference}
+\label{class_num_val}\index{NumVal@{NumVal}}
+
+
+A value that represents a Number.  
+
+
+
+
+{\ttfamily \#include $<$Val.\+hpp$>$}
+
+Inheritance diagram for Num\+Val\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_num_val}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_num_val_a82dc5e34fe57fc76500105dc918b81e7}{Num\+Val}} (int value)
+\begin{DoxyCompactList}\small\item\em The number value for the object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_num_val_a190b765e9ddacc5b05842df88b2e4a52}{equals}} (PTR(Val) v)
+\begin{DoxyCompactList}\small\item\em Evaluates whether this value is equivelant to another value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_num_val_a25ff91b1f794d8e62a82b903d64dc23d}\label{class_num_val_a25ff91b1f794d8e62a82b903d64dc23d}} 
+{\bfseries PTR} (Val) add\+To(PTR(Val) v)
+\item 
+\mbox{\Hypertarget{class_num_val_a625c1cfc2eb811f8d6dfb815876bd19e}\label{class_num_val_a625c1cfc2eb811f8d6dfb815876bd19e}} 
+{\bfseries PTR} (Val) mult\+To(PTR(Val) v)
+\item 
+\mbox{\Hypertarget{class_num_val_a9ca7c7587e358b4382954a6e772b6ff4}\label{class_num_val_a9ca7c7587e358b4382954a6e772b6ff4}} 
+{\bfseries PTR} (Expr) to\+Expr()
+\item 
+std\+::string \mbox{\hyperlink{class_num_val_ad2b44a43a993bcfd827f9dcf753e7646}{to\+String}} ()
+\begin{DoxyCompactList}\small\item\em Turns a value object into a string. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_num_val_a53a1a8393ec79c1915eafc5bcad8ab49}{is\+True}} ()
+\begin{DoxyCompactList}\small\item\em Determines if a value object is true or false. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_num_val_a8a2f1483d2b0d40fdea4421154bc5f91}\label{class_num_val_a8a2f1483d2b0d40fdea4421154bc5f91}} 
+{\bfseries PTR} (Val) call(PTR(Val) argument)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_num_val_aefe3cdeae9a12594888496bf848f8c08}\label{class_num_val_aefe3cdeae9a12594888496bf848f8c08}} 
+int {\bfseries val}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A value that represents a Number. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_num_val_a82dc5e34fe57fc76500105dc918b81e7}\label{class_num_val_a82dc5e34fe57fc76500105dc918b81e7}} 
+\index{NumVal@{NumVal}!NumVal@{NumVal}}
+\index{NumVal@{NumVal}!NumVal@{NumVal}}
+\doxysubsubsection{\texorpdfstring{NumVal()}{NumVal()}}
+{\footnotesize\ttfamily Num\+Val\+::\+Num\+Val (\begin{DoxyParamCaption}\item[{int}]{val }\end{DoxyParamCaption})}
+
+
+
+The number value for the object. 
+
+\mbox{\hyperlink{class_num_val}{Num\+Val}} constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & Initial number value the object is set to \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_num_val_a190b765e9ddacc5b05842df88b2e4a52}\label{class_num_val_a190b765e9ddacc5b05842df88b2e4a52}} 
+\index{NumVal@{NumVal}!equals@{equals}}
+\index{equals@{equals}!NumVal@{NumVal}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily bool Num\+Val\+::equals (\begin{DoxyParamCaption}\item[{PTR(Val)}]{v }\end{DoxyParamCaption})}
+
+
+
+Evaluates whether this value is equivelant to another value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$v} & A value to check equivelancy against \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the 2 values are equal, false if the 2 values are not equal 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_num_val_a53a1a8393ec79c1915eafc5bcad8ab49}\label{class_num_val_a53a1a8393ec79c1915eafc5bcad8ab49}} 
+\index{NumVal@{NumVal}!isTrue@{isTrue}}
+\index{isTrue@{isTrue}!NumVal@{NumVal}}
+\doxysubsubsection{\texorpdfstring{isTrue()}{isTrue()}}
+{\footnotesize\ttfamily bool Num\+Val\+::is\+True (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Determines if a value object is true or false. 
+
+\begin{DoxyReturn}{Returns}
+Always throws an exeption for a number value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_num_val_ad2b44a43a993bcfd827f9dcf753e7646}\label{class_num_val_ad2b44a43a993bcfd827f9dcf753e7646}} 
+\index{NumVal@{NumVal}!toString@{toString}}
+\index{toString@{toString}!NumVal@{NumVal}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily std\+::string Num\+Val\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Turns a value object into a string. 
+
+\begin{DoxyReturn}{Returns}
+The value contained in the object as a string 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/michaeljohnson/\+MSD/\+MSDScript/msdscript/msdscript/Val.\+hpp\item 
+/\+Users/michaeljohnson/\+MSD/\+MSDScript/msdscript/msdscript/\mbox{\hyperlink{_val_8cpp}{Val.\+cpp}}\end{DoxyCompactItemize}

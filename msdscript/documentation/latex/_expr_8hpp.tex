@@ -1,0 +1,59 @@
+\hypertarget{_expr_8hpp}{}\doxysection{/\+Users/michaeljohnson/\+MSD/\+MSDScript/msdscript/msdscript/\+Expr.hpp File Reference}
+\label{_expr_8hpp}\index{/Users/michaeljohnson/MSD/MSDScript/msdscript/msdscript/Expr.hpp@{/Users/michaeljohnson/MSD/MSDScript/msdscript/msdscript/Expr.hpp}}
+
+
+An object that represents a mathmatical expression.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$stdexcept$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include \char`\"{}pointers.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_num_expr}{Num\+Expr}}
+\begin{DoxyCompactList}\small\item\em An expression that represents a whole number. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_add_expr}{Add\+Expr}}
+\begin{DoxyCompactList}\small\item\em An expression that represents 2 other expressions being added together. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_mult_expr}{Mult\+Expr}}
+\begin{DoxyCompactList}\small\item\em An expression that represents 2 other expressions being multiplied together. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_var_expr}{Var\+Expr}}
+\begin{DoxyCompactList}\small\item\em An expression that represents a variable. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class__let_expr}{\+\_\+let\+Expr}}
+\begin{DoxyCompactList}\small\item\em An expression that represents a value being substituted into another expressions stated variable. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class__if_expr}{\+\_\+if\+Expr}}
+\begin{DoxyCompactList}\small\item\em An expression that represents that represents a boolean condition and the steps to take after the condition is interpreted. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_bool_expr}{Bool\+Expr}}
+\begin{DoxyCompactList}\small\item\em an expression that represents true or false \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_eq_expr}{Eq\+Expr}}
+\begin{DoxyCompactList}\small\item\em An expression that represents the equivalency of 2 seperate expressions seperated by a \textquotesingle{}==\textquotesingle{}. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class__fun_expr}{\+\_\+fun\+Expr}}
+\item 
+class \mbox{\hyperlink{classcall_expr}{call\+Expr}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_expr_8hpp_a10b23a54991ee1aac71573c5fb77a25b}\label{_expr_8hpp_a10b23a54991ee1aac71573c5fb77a25b}} 
+enum \mbox{\hyperlink{_expr_8hpp_a10b23a54991ee1aac71573c5fb77a25b}{Expr\+Prec}} \{ {\bfseries no\+Prec}
+, {\bfseries add\+Prec}
+, {\bfseries mult\+Prec}
+, {\bfseries let\+Prec}
+ \}
+\begin{DoxyCompactList}\small\item\em Simple enumeration denoting the precedence of expressions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_expr_8hpp_a63b2eaf23b08c74ca88c315842119206}\label{_expr_8hpp_a63b2eaf23b08c74ca88c315842119206}} 
+{\bfseries CLASS} (Expr)
+\begin{DoxyCompactList}\small\item\em Parent class to all other expressions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An object that represents a mathmatical expression. 
+
+An object that represents a number, variable, or the application of addition or multiplication. The object does not need to be represented strictly by numbers as long as variables are included. Variables should be substituted for number expressions before any interpretation is performed \begin{DoxyAuthor}{Author}
+Michael Johnson 
+\end{DoxyAuthor}

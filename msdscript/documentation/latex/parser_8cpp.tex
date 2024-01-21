@@ -1,0 +1,154 @@
+\hypertarget{parser_8cpp}{}\doxysection{/\+Users/michaeljohnson/\+MSD/\+MSDScript/msdscript/msdscript/parser.cpp File Reference}
+\label{parser_8cpp}\index{/Users/michaeljohnson/MSD/MSDScript/msdscript/msdscript/parser.cpp@{/Users/michaeljohnson/MSD/MSDScript/msdscript/msdscript/parser.cpp}}
+
+
+A tool to parse expressions written by the user into expressions that are usable by the script.  
+
+
+{\ttfamily \#include \char`\"{}parser.\+hpp\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include \char`\"{}Expr.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Val.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}pointers.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{parser_8cpp_a5ddf4479160733475b032c0543e26f87}{PTR}} (Expr) parse\+Num(std
+\begin{DoxyCompactList}\small\item\em Places number tokens into \mbox{\hyperlink{class_num_expr}{Num\+Expr}} objects. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{parser_8cpp_aae230dbfd93b8643bd0133158a24e566}{consume}} (std\+::istream \&in, int expect)
+\begin{DoxyCompactList}\small\item\em Advances the cursor of the user input as long the next character matches the expectation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{parser_8cpp_af05fdc1c88cb34bb58d5bdde2fb156b8}{skip\+Whitespace}} (std\+::istream \&in)
+\begin{DoxyCompactList}\small\item\em Skips over whitespace to reach the next character. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A tool to parse expressions written by the user into expressions that are usable by the script. 
+
+Takes user written mathematical expressions and tokenizes them. Once the user input has been tokenized, the tokens are placed into expression objects and sent through the respective interp methods \begin{DoxyAuthor}{Author}
+Michael Johnson 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{parser_8cpp_aae230dbfd93b8643bd0133158a24e566}\label{parser_8cpp_aae230dbfd93b8643bd0133158a24e566}} 
+\index{parser.cpp@{parser.cpp}!consume@{consume}}
+\index{consume@{consume}!parser.cpp@{parser.cpp}}
+\doxysubsubsection{\texorpdfstring{consume()}{consume()}}
+{\footnotesize\ttfamily void consume (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{in,  }\item[{int}]{expect }\end{DoxyParamCaption})}
+
+
+
+Advances the cursor of the user input as long the next character matches the expectation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em in} & The user input to parse \\
+\hline
+{\em expect} & The exectation of the next character \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{parser_8cpp_a5ddf4479160733475b032c0543e26f87}\label{parser_8cpp_a5ddf4479160733475b032c0543e26f87}} 
+\index{parser.cpp@{parser.cpp}!PTR@{PTR}}
+\index{PTR@{PTR}!parser.cpp@{parser.cpp}}
+\doxysubsubsection{\texorpdfstring{PTR()}{PTR()}}
+{\footnotesize\ttfamily PTR (\begin{DoxyParamCaption}\item[{Expr}]{ }\end{DoxyParamCaption})}
+
+
+
+Places number tokens into \mbox{\hyperlink{class_num_expr}{Num\+Expr}} objects. 
+
+Turns a value object into an expression object.
+
+Tokenizes the pieces of the if expression and places them in an expression object.
+
+Tokenizes the pieces of a false expression and places them in an expression objection.
+
+Tokenizes the pieces of a true expression and places them in an expression objection.
+
+Tokenizes the pieces of the let expression and places them in an expression object.
+
+Transfers istream to parse\+Let, parse\+True, parse\+False, or parse\+If.
+
+Transfers istream to parse\+Comparg or parse\+Expr. Starts the parse process.
+
+Transfers istream to parse\+Addend or parse\+Comparg.
+
+Transfers istream to parse\+Multicand or parse\+Addend.
+
+Transfers istream to parse\+Num, parse\+Var, parse\+Keyword, or back to parse\+Expr.
+
+Places variable tokens into \mbox{\hyperlink{class_var_expr}{Var\+Expr}} objects.
+
+
+\begin{DoxyParams}{Parameters}
+{\em in} & The user input to parse \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+New \mbox{\hyperlink{class_num_expr}{Num\+Expr}} object
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em in} & The user input to parse \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+New \mbox{\hyperlink{class_var_expr}{Var\+Expr}} object
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em in} & The user input to parse \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An expression object with a tokenized value
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em in} & The user input to parse \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A let expression
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em in} & The user input to parse \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A true expression
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em in} & The user input to parse \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A false expression
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em in} & The user input to parse \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An if expression
+
+New boolean expression with the value as an initialization 
+\end{DoxyReturn}
+\mbox{\Hypertarget{parser_8cpp_af05fdc1c88cb34bb58d5bdde2fb156b8}\label{parser_8cpp_af05fdc1c88cb34bb58d5bdde2fb156b8}} 
+\index{parser.cpp@{parser.cpp}!skipWhitespace@{skipWhitespace}}
+\index{skipWhitespace@{skipWhitespace}!parser.cpp@{parser.cpp}}
+\doxysubsubsection{\texorpdfstring{skipWhitespace()}{skipWhitespace()}}
+{\footnotesize\ttfamily void skip\+Whitespace (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{in }\end{DoxyParamCaption})}
+
+
+
+Skips over whitespace to reach the next character. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em in} & The user input to parse \\
+\hline
+\end{DoxyParams}

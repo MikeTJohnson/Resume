@@ -1,0 +1,140 @@
+\hypertarget{class_add_expr}{}\doxysection{Add\+Expr Class Reference}
+\label{class_add_expr}\index{AddExpr@{AddExpr}}
+
+
+An expression that represents 2 other expressions being added together.  
+
+
+
+
+{\ttfamily \#include $<$Expr.\+hpp$>$}
+
+Inheritance diagram for Add\+Expr\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_add_expr}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_add_expr_ad5a2d1a609bee72c0fb6646e2bbbc37e}\label{class_add_expr_ad5a2d1a609bee72c0fb6646e2bbbc37e}} 
+{\bfseries PTR} (Expr) lhs
+\item 
+\mbox{\Hypertarget{class_add_expr_a46af24c80b91f9a28fee02604530f053}\label{class_add_expr_a46af24c80b91f9a28fee02604530f053}} 
+{\bfseries PTR} (Expr) rhs
+\begin{DoxyCompactList}\small\item\em The expression on the left of the addition sign \char`\"{}+\char`\"{}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_add_expr_ae63bbc7451f249ceaabe888ec7a46bb0}{Add\+Expr}} (PTR(Expr) lhs, PTR(Expr) rhs)
+\begin{DoxyCompactList}\small\item\em The expression on the right of the addition sign \char`\"{}+\char`\"{}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_add_expr_aad37ec3f37cdaa5bb17223fd672c9fda}{equals}} (PTR(Expr) e)
+\begin{DoxyCompactList}\small\item\em Evaluates whether this expression is equal to another expression. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_add_expr_a8c10df147142092525cab84763e8ba58}\label{class_add_expr_a8c10df147142092525cab84763e8ba58}} 
+{\bfseries PTR} (Val) interp(PTR(Env) env)
+\item 
+bool \mbox{\hyperlink{class_add_expr_a079602e422c5a95e3d6cf9e2c2fcd555}{has\+Variable}} ()
+\begin{DoxyCompactList}\small\item\em Checks if this expression contains a variable. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_add_expr_ac5c4f6033d3338a1a3b30d37520b103b}{print}} (std\+::ostream \&)
+\begin{DoxyCompactList}\small\item\em Prints the expression in a human readable form. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_add_expr_a19dc4dcccfc46a380c0e00fd1d3e4339}{pretty\+Print}} (std\+::ostream \&, \mbox{\hyperlink{_expr_8hpp_a10b23a54991ee1aac71573c5fb77a25b}{Expr\+Prec}}, std\+::streampos, bool)
+\begin{DoxyCompactList}\small\item\em Prints the expression in human readable form without unneccessary parentheses. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An expression that represents 2 other expressions being added together. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_add_expr_ae63bbc7451f249ceaabe888ec7a46bb0}\label{class_add_expr_ae63bbc7451f249ceaabe888ec7a46bb0}} 
+\index{AddExpr@{AddExpr}!AddExpr@{AddExpr}}
+\index{AddExpr@{AddExpr}!AddExpr@{AddExpr}}
+\doxysubsubsection{\texorpdfstring{AddExpr()}{AddExpr()}}
+{\footnotesize\ttfamily Add\+Expr\+::\+Add\+Expr (\begin{DoxyParamCaption}\item[{PTR(Expr)}]{lhs,  }\item[{PTR(Expr)}]{rhs }\end{DoxyParamCaption})}
+
+
+
+The expression on the right of the addition sign \char`\"{}+\char`\"{}. 
+
+\mbox{\hyperlink{class_add_expr}{Add\+Expr}} constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$lhs} & The left hand side sub-\/expression of the add expression \\
+\hline
+{\em $\ast$rhs} & The right hand side sub-\/expression of the add expression \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_add_expr_aad37ec3f37cdaa5bb17223fd672c9fda}\label{class_add_expr_aad37ec3f37cdaa5bb17223fd672c9fda}} 
+\index{AddExpr@{AddExpr}!equals@{equals}}
+\index{equals@{equals}!AddExpr@{AddExpr}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily bool Add\+Expr\+::equals (\begin{DoxyParamCaption}\item[{PTR(Expr)}]{e }\end{DoxyParamCaption})}
+
+
+
+Evaluates whether this expression is equal to another expression. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$e} & An expression to compare values against \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the expressions are equal, false if the expressions are not equal 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_add_expr_a079602e422c5a95e3d6cf9e2c2fcd555}\label{class_add_expr_a079602e422c5a95e3d6cf9e2c2fcd555}} 
+\index{AddExpr@{AddExpr}!hasVariable@{hasVariable}}
+\index{hasVariable@{hasVariable}!AddExpr@{AddExpr}}
+\doxysubsubsection{\texorpdfstring{hasVariable()}{hasVariable()}}
+{\footnotesize\ttfamily bool Add\+Expr\+::has\+Variable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks if this expression contains a variable. 
+
+\begin{DoxyReturn}{Returns}
+True if the expression contains a variable, false if it does not contain a variable 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_add_expr_a19dc4dcccfc46a380c0e00fd1d3e4339}\label{class_add_expr_a19dc4dcccfc46a380c0e00fd1d3e4339}} 
+\index{AddExpr@{AddExpr}!prettyPrint@{prettyPrint}}
+\index{prettyPrint@{prettyPrint}!AddExpr@{AddExpr}}
+\doxysubsubsection{\texorpdfstring{prettyPrint()}{prettyPrint()}}
+{\footnotesize\ttfamily void Add\+Expr\+::pretty\+Print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out,  }\item[{\mbox{\hyperlink{_expr_8hpp_a10b23a54991ee1aac71573c5fb77a25b}{Expr\+Prec}}}]{e,  }\item[{std\+::streampos}]{stream\+Pos,  }\item[{bool}]{paranth }\end{DoxyParamCaption})}
+
+
+
+Prints the expression in human readable form without unneccessary parentheses. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & The desired stream to output the expression \\
+\hline
+{\em e} & The precedence of the calling function \\
+\hline
+{\em stream\+Pos} & Current position of the stream \\
+\hline
+{\em paranth} & Boolean determining whether the method needs to add parantheses \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_add_expr_ac5c4f6033d3338a1a3b30d37520b103b}\label{class_add_expr_ac5c4f6033d3338a1a3b30d37520b103b}} 
+\index{AddExpr@{AddExpr}!print@{print}}
+\index{print@{print}!AddExpr@{AddExpr}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Add\+Expr\+::print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out }\end{DoxyParamCaption})}
+
+
+
+Prints the expression in a human readable form. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & The desired stream to ouput the expression \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/michaeljohnson/\+MSD/\+MSDScript/msdscript/msdscript/\mbox{\hyperlink{_expr_8hpp}{Expr.\+hpp}}\item 
+/\+Users/michaeljohnson/\+MSD/\+MSDScript/msdscript/msdscript/\mbox{\hyperlink{_expr_8cpp}{Expr.\+cpp}}\end{DoxyCompactItemize}

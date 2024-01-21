@@ -1,0 +1,88 @@
+\hypertarget{_val_8cpp}{}\doxysection{/\+Users/michaeljohnson/\+MSD/\+MSDScript/msdscript/msdscript/\+Val.cpp File Reference}
+\label{_val_8cpp}\index{/Users/michaeljohnson/MSD/MSDScript/msdscript/msdscript/Val.cpp@{/Users/michaeljohnson/MSD/MSDScript/msdscript/msdscript/Val.cpp}}
+
+
+An object that represents the value of a mathematical expression.  
+
+
+{\ttfamily \#include \char`\"{}Expr.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Val.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}pointers.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Env.\+hpp\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_val_8cpp_acf4c7ece41b333bd31f597d20349a424}{PTR}} (Val) \mbox{\hyperlink{class_num_val}{Num\+Val}}
+\begin{DoxyCompactList}\small\item\em Helper method to add 2 values together. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_val_8cpp_a41feaf6febcb647ff6b7e046653561fa}{PTR}} (Expr) \mbox{\hyperlink{class_num_val}{Num\+Val}}
+\begin{DoxyCompactList}\small\item\em Turns a value object into an expression object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An object that represents the value of a mathematical expression. 
+
+An object that represents an interpreted expression. That value takes the form of a number, true, or false. \begin{DoxyAuthor}{Author}
+Michael Johnson 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_val_8cpp_a41feaf6febcb647ff6b7e046653561fa}\label{_val_8cpp_a41feaf6febcb647ff6b7e046653561fa}} 
+\index{Val.cpp@{Val.cpp}!PTR@{PTR}}
+\index{PTR@{PTR}!Val.cpp@{Val.cpp}}
+\doxysubsubsection{\texorpdfstring{PTR()}{PTR()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily PTR (\begin{DoxyParamCaption}\item[{Expr}]{ }\end{DoxyParamCaption})}
+
+
+
+Turns a value object into an expression object. 
+
+\begin{DoxyReturn}{Returns}
+New number expression with the value as an initialization
+
+New boolean expression with the value as an initialization 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_val_8cpp_acf4c7ece41b333bd31f597d20349a424}\label{_val_8cpp_acf4c7ece41b333bd31f597d20349a424}} 
+\index{Val.cpp@{Val.cpp}!PTR@{PTR}}
+\index{PTR@{PTR}!Val.cpp@{Val.cpp}}
+\doxysubsubsection{\texorpdfstring{PTR()}{PTR()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily PTR (\begin{DoxyParamCaption}\item[{Val}]{ }\end{DoxyParamCaption})}
+
+
+
+Helper method to add 2 values together. 
+
+Helper method to multiply 2 values together.
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$v} & The value object to add to the orginial value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The new value object equal to the original values added together
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$v} & The value object to multiply to the original value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The new value object equal to the original values multiplied together
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$v} & The value object to add to the orginial value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Always throws an exception for a boolean value
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$v} & The value object to multiply to the orginial value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Always throws an exception for a boolean value 
+\end{DoxyReturn}

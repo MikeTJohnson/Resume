@@ -1,0 +1,61 @@
+\hypertarget{_expr_8cpp}{}\doxysection{/\+Users/michaeljohnson/\+MSD/\+MSDScript/msdscript/msdscript/\+Expr.cpp File Reference}
+\label{_expr_8cpp}\index{/Users/michaeljohnson/MSD/MSDScript/msdscript/msdscript/Expr.cpp@{/Users/michaeljohnson/MSD/MSDScript/msdscript/msdscript/Expr.cpp}}
+
+
+An object that represents a mathmatical expression.  
+
+
+{\ttfamily \#include \char`\"{}Val.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Expr.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}catch.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$stdexcept$>$}\newline
+{\ttfamily \#include \char`\"{}pointers.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Env.\+hpp\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_expr_8cpp_a31f1911d2f4afb067bbff886433df3ff}{PTR}} (Val) \mbox{\hyperlink{class_num_expr}{Num\+Expr}}
+\begin{DoxyCompactList}\small\item\em Interperates the value of the expression in a mathematical manner. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An object that represents a mathmatical expression. 
+
+An object that represents a number, variable, or the application of addition or multiplication. The object does not need to be represented strictly by numbers as long as variables are included. Variables should be substituted for number expressions before any interpretation is performed \begin{DoxyAuthor}{Author}
+Michael Johnson 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_expr_8cpp_a31f1911d2f4afb067bbff886433df3ff}\label{_expr_8cpp_a31f1911d2f4afb067bbff886433df3ff}} 
+\index{Expr.cpp@{Expr.cpp}!PTR@{PTR}}
+\index{PTR@{PTR}!Expr.cpp@{Expr.cpp}}
+\doxysubsubsection{\texorpdfstring{PTR()}{PTR()}}
+{\footnotesize\ttfamily PTR (\begin{DoxyParamCaption}\item[{Val}]{ }\end{DoxyParamCaption})}
+
+
+
+Interperates the value of the expression in a mathematical manner. 
+
+Interprets if the values of the rhs and lhs are equal.
+
+Determines if the value of the boolean expression is true or false.
+
+Mathematically evaluates the if expression and executes 1 of the other expressions depending on the boolean value.
+
+Mathematically evaluates the let expression by substituting the variable with the lhs expression.
+
+\begin{DoxyReturn}{Returns}
+The value of this expression
+
+throws an error if the variable has not been given an expression substitution
+
+Whole number value of the evaluated let expression
+
+The value of the first expression if true, and the value of the second expression if false
+
+The boolean value of the expression
+
+True if the values are equal, false if the values are not equal 
+\end{DoxyReturn}

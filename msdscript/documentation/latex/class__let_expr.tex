@@ -1,0 +1,148 @@
+\hypertarget{class__let_expr}{}\doxysection{\+\_\+let\+Expr Class Reference}
+\label{class__let_expr}\index{\_letExpr@{\_letExpr}}
+
+
+An expression that represents a value being substituted into another expressions stated variable.  
+
+
+
+
+{\ttfamily \#include $<$Expr.\+hpp$>$}
+
+Inheritance diagram for \+\_\+let\+Expr\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class__let_expr}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class__let_expr_a2b4bdc7ba1996c1dcc29a0867a203b24}\label{class__let_expr_a2b4bdc7ba1996c1dcc29a0867a203b24}} 
+{\bfseries PTR} (Expr) lhs
+\begin{DoxyCompactList}\small\item\em The variable to substitue. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class__let_expr_a0247483d0a8d4a320bcf0b7107d6aa07}\label{class__let_expr_a0247483d0a8d4a320bcf0b7107d6aa07}} 
+{\bfseries PTR} (Expr) rhs
+\begin{DoxyCompactList}\small\item\em The expression to replace the variable with. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class__let_expr_adc947def773740fe2407652aa2b26376}{\+\_\+let\+Expr}} (std\+::string str, \mbox{\hyperlink{class__let_expr_a2b4bdc7ba1996c1dcc29a0867a203b24}{PTR}}(Expr) lhs, \mbox{\hyperlink{class__let_expr_a2b4bdc7ba1996c1dcc29a0867a203b24}{PTR}}(Expr) rhs)
+\begin{DoxyCompactList}\small\item\em The expression with the variable to be replaced. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class__let_expr_a4a7d111707796dbbf3c99789c1f66600}{equals}} (\mbox{\hyperlink{class__let_expr_a2b4bdc7ba1996c1dcc29a0867a203b24}{PTR}}(Expr) e)
+\begin{DoxyCompactList}\small\item\em Evaluates whether this expression is equal to another expression. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class__let_expr_a2dfd37a4b4021cac04eb0ee80e2cfe1a}\label{class__let_expr_a2dfd37a4b4021cac04eb0ee80e2cfe1a}} 
+{\bfseries PTR} (Val) interp(PTR(Env) env)
+\item 
+bool \mbox{\hyperlink{class__let_expr_a3c10391e315d866f7375e4dfc4f02c5e}{has\+Variable}} ()
+\begin{DoxyCompactList}\small\item\em Evaluates if the expression contains a variable in the body expression. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class__let_expr_a760686bc65bedac3f632a09beba73d4f}{print}} (std\+::ostream \&)
+\begin{DoxyCompactList}\small\item\em Prints the let expression in human readable form to the desired output. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class__let_expr_a862e489832f795dc8d2ca26da0e897da}{pretty\+Print}} (std\+::ostream \&, \mbox{\hyperlink{_expr_8hpp_a10b23a54991ee1aac71573c5fb77a25b}{Expr\+Prec}}, std\+::streampos, bool)
+\begin{DoxyCompactList}\small\item\em Prints the expression in human readable form without unneccessary parentheses. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class__let_expr_a910f961ff85f090746dc8d14bdcafc0a}\label{class__let_expr_a910f961ff85f090746dc8d14bdcafc0a}} 
+std\+::string {\bfseries str}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An expression that represents a value being substituted into another expressions stated variable. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class__let_expr_adc947def773740fe2407652aa2b26376}\label{class__let_expr_adc947def773740fe2407652aa2b26376}} 
+\index{\_letExpr@{\_letExpr}!\_letExpr@{\_letExpr}}
+\index{\_letExpr@{\_letExpr}!\_letExpr@{\_letExpr}}
+\doxysubsubsection{\texorpdfstring{\_letExpr()}{\_letExpr()}}
+{\footnotesize\ttfamily \+\_\+let\+Expr\+::\+\_\+let\+Expr (\begin{DoxyParamCaption}\item[{std\+::string}]{v,  }\item[{\mbox{\hyperlink{class__let_expr_a2b4bdc7ba1996c1dcc29a0867a203b24}{PTR}}(Expr)}]{lhs,  }\item[{\mbox{\hyperlink{class__let_expr_a2b4bdc7ba1996c1dcc29a0867a203b24}{PTR}}(Expr)}]{rhs }\end{DoxyParamCaption})}
+
+
+
+The expression with the variable to be replaced. 
+
+Let expression constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & String depicting the variable to be replaced \\
+\hline
+{\em lhs} & The expression to replace the variable with \\
+\hline
+{\em rhs} & The body expression containing the variable to be replaced \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class__let_expr_a4a7d111707796dbbf3c99789c1f66600}\label{class__let_expr_a4a7d111707796dbbf3c99789c1f66600}} 
+\index{\_letExpr@{\_letExpr}!equals@{equals}}
+\index{equals@{equals}!\_letExpr@{\_letExpr}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily bool \+\_\+let\+Expr\+::equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class__let_expr_a2b4bdc7ba1996c1dcc29a0867a203b24}{PTR}}(Expr)}]{e }\end{DoxyParamCaption})}
+
+
+
+Evaluates whether this expression is equal to another expression. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & The expression to compare for equivalence \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the expressions are equal, false if the expressions are not equal 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class__let_expr_a3c10391e315d866f7375e4dfc4f02c5e}\label{class__let_expr_a3c10391e315d866f7375e4dfc4f02c5e}} 
+\index{\_letExpr@{\_letExpr}!hasVariable@{hasVariable}}
+\index{hasVariable@{hasVariable}!\_letExpr@{\_letExpr}}
+\doxysubsubsection{\texorpdfstring{hasVariable()}{hasVariable()}}
+{\footnotesize\ttfamily bool \+\_\+let\+Expr\+::has\+Variable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Evaluates if the expression contains a variable in the body expression. 
+
+\begin{DoxyReturn}{Returns}
+Returns true if the body contains a variable, false if the body does not contain a variable 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class__let_expr_a862e489832f795dc8d2ca26da0e897da}\label{class__let_expr_a862e489832f795dc8d2ca26da0e897da}} 
+\index{\_letExpr@{\_letExpr}!prettyPrint@{prettyPrint}}
+\index{prettyPrint@{prettyPrint}!\_letExpr@{\_letExpr}}
+\doxysubsubsection{\texorpdfstring{prettyPrint()}{prettyPrint()}}
+{\footnotesize\ttfamily void \+\_\+let\+Expr\+::pretty\+Print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out,  }\item[{\mbox{\hyperlink{_expr_8hpp_a10b23a54991ee1aac71573c5fb77a25b}{Expr\+Prec}}}]{e,  }\item[{std\+::streampos}]{stream\+Pos,  }\item[{bool}]{paranth }\end{DoxyParamCaption})}
+
+
+
+Prints the expression in human readable form without unneccessary parentheses. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & The desired stream to output the expression \\
+\hline
+{\em e} & The precedence of the calling function \\
+\hline
+{\em stream\+Pos} & Current position of the stream \\
+\hline
+{\em paranth} & Boolean determining whether the method needs to add parantheses \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class__let_expr_a760686bc65bedac3f632a09beba73d4f}\label{class__let_expr_a760686bc65bedac3f632a09beba73d4f}} 
+\index{\_letExpr@{\_letExpr}!print@{print}}
+\index{print@{print}!\_letExpr@{\_letExpr}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void \+\_\+let\+Expr\+::print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out }\end{DoxyParamCaption})}
+
+
+
+Prints the let expression in human readable form to the desired output. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & The output stream to print the expression \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/michaeljohnson/\+MSD/\+MSDScript/msdscript/msdscript/\mbox{\hyperlink{_expr_8hpp}{Expr.\+hpp}}\item 
+/\+Users/michaeljohnson/\+MSD/\+MSDScript/msdscript/msdscript/\mbox{\hyperlink{_expr_8cpp}{Expr.\+cpp}}\end{DoxyCompactItemize}

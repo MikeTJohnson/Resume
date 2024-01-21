@@ -1,0 +1,138 @@
+\hypertarget{class_var_expr}{}\doxysection{Var\+Expr Class Reference}
+\label{class_var_expr}\index{VarExpr@{VarExpr}}
+
+
+An expression that represents a variable.  
+
+
+
+
+{\ttfamily \#include $<$Expr.\+hpp$>$}
+
+Inheritance diagram for Var\+Expr\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_var_expr}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_var_expr_acea0137b492fba9b6364293b508cd72a}{Var\+Expr}} (std\+::string str)
+\begin{DoxyCompactList}\small\item\em The symbol or label the variable is represented by. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_var_expr_a9bf32727eb6e7aca95ed869f03f205a0}{equals}} (PTR(Expr) e)
+\begin{DoxyCompactList}\small\item\em Evaluates whether this expression is equal to another expression. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_var_expr_ad4c2f918b703cff1bed1a43809d335c6}\label{class_var_expr_ad4c2f918b703cff1bed1a43809d335c6}} 
+{\bfseries PTR} (Val) interp(PTR(Env) env)
+\item 
+bool \mbox{\hyperlink{class_var_expr_a39a9801d3da77319aff891a41844b674}{has\+Variable}} ()
+\begin{DoxyCompactList}\small\item\em Checks if this expression contains a variable. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_var_expr_a0c91ebbf2080ab95a50b2f1751061a26}{print}} (std\+::ostream \&)
+\begin{DoxyCompactList}\small\item\em Prints the expression in a human readable form. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_var_expr_a43dc27ef73446899149e19b47285dc25}{pretty\+Print}} (std\+::ostream \&, \mbox{\hyperlink{_expr_8hpp_a10b23a54991ee1aac71573c5fb77a25b}{Expr\+Prec}}, std\+::streampos, bool)
+\begin{DoxyCompactList}\small\item\em Prints the expression in human readable form without unneccessary parentheses. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_var_expr_a90ea230a200db2db9e1c7f9d48e9b396}\label{class_var_expr_a90ea230a200db2db9e1c7f9d48e9b396}} 
+std\+::string {\bfseries str}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An expression that represents a variable. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_var_expr_acea0137b492fba9b6364293b508cd72a}\label{class_var_expr_acea0137b492fba9b6364293b508cd72a}} 
+\index{VarExpr@{VarExpr}!VarExpr@{VarExpr}}
+\index{VarExpr@{VarExpr}!VarExpr@{VarExpr}}
+\doxysubsubsection{\texorpdfstring{VarExpr()}{VarExpr()}}
+{\footnotesize\ttfamily Var\+Expr\+::\+Var\+Expr (\begin{DoxyParamCaption}\item[{std\+::string}]{str }\end{DoxyParamCaption})}
+
+
+
+The symbol or label the variable is represented by. 
+
+\mbox{\hyperlink{class_var_expr}{Var\+Expr}} constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$str} & The initial representation of the variable \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_var_expr_a9bf32727eb6e7aca95ed869f03f205a0}\label{class_var_expr_a9bf32727eb6e7aca95ed869f03f205a0}} 
+\index{VarExpr@{VarExpr}!equals@{equals}}
+\index{equals@{equals}!VarExpr@{VarExpr}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily bool Var\+Expr\+::equals (\begin{DoxyParamCaption}\item[{PTR(Expr)}]{e }\end{DoxyParamCaption})}
+
+
+
+Evaluates whether this expression is equal to another expression. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$e} & An expression to compare values against \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the expressions are equal, false if the expressions are not equal 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_var_expr_a39a9801d3da77319aff891a41844b674}\label{class_var_expr_a39a9801d3da77319aff891a41844b674}} 
+\index{VarExpr@{VarExpr}!hasVariable@{hasVariable}}
+\index{hasVariable@{hasVariable}!VarExpr@{VarExpr}}
+\doxysubsubsection{\texorpdfstring{hasVariable()}{hasVariable()}}
+{\footnotesize\ttfamily bool Var\+Expr\+::has\+Variable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks if this expression contains a variable. 
+
+\begin{DoxyReturn}{Returns}
+True 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_var_expr_a43dc27ef73446899149e19b47285dc25}\label{class_var_expr_a43dc27ef73446899149e19b47285dc25}} 
+\index{VarExpr@{VarExpr}!prettyPrint@{prettyPrint}}
+\index{prettyPrint@{prettyPrint}!VarExpr@{VarExpr}}
+\doxysubsubsection{\texorpdfstring{prettyPrint()}{prettyPrint()}}
+{\footnotesize\ttfamily void Var\+Expr\+::pretty\+Print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out,  }\item[{\mbox{\hyperlink{_expr_8hpp_a10b23a54991ee1aac71573c5fb77a25b}{Expr\+Prec}}}]{e,  }\item[{std\+::streampos}]{stream\+Pos,  }\item[{bool}]{paranth }\end{DoxyParamCaption})}
+
+
+
+Prints the expression in human readable form without unneccessary parentheses. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & The desired stream to output the expression \\
+\hline
+{\em e} & The precedence of the calling function \\
+\hline
+{\em stream\+Pos} & Current position of the stream \\
+\hline
+{\em paranth} & Boolean determining whether the method needs to add parantheses \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_var_expr_a0c91ebbf2080ab95a50b2f1751061a26}\label{class_var_expr_a0c91ebbf2080ab95a50b2f1751061a26}} 
+\index{VarExpr@{VarExpr}!print@{print}}
+\index{print@{print}!VarExpr@{VarExpr}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Var\+Expr\+::print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out }\end{DoxyParamCaption})}
+
+
+
+Prints the expression in a human readable form. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & The desired stream to ouput the expression \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/michaeljohnson/\+MSD/\+MSDScript/msdscript/msdscript/\mbox{\hyperlink{_expr_8hpp}{Expr.\+hpp}}\item 
+/\+Users/michaeljohnson/\+MSD/\+MSDScript/msdscript/msdscript/\mbox{\hyperlink{_expr_8cpp}{Expr.\+cpp}}\end{DoxyCompactItemize}

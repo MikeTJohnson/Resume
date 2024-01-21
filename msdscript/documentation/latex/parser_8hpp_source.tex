@@ -1,0 +1,25 @@
+\hypertarget{parser_8hpp_source}{}\doxysection{/\+Users/michaeljohnson/\+MSD/\+MSDScript/msdscript/msdscript/parser.hpp}
+\mbox{\hyperlink{parser_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <istream>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}pointers.h"{}}}
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }Expr;}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{extern}\ PTR(Expr)\ parseExpr(std::istream\ \&in);}
+\DoxyCodeLine{00018\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{parser_8hpp_a12c9e21eeeee6ffdd5fb437bd74ff603}{skipWhitespace}}(std::istream\ \&in);}
+\DoxyCodeLine{00019\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{parser_8hpp_aae230dbfd93b8643bd0133158a24e566}{consume}}(std::istream\&\ in,\ \textcolor{keywordtype}{int}\ expect);}
+\DoxyCodeLine{00020\ \textcolor{keyword}{extern}\ PTR(Expr)\ parseNum(std::istream\ \&in);}
+\DoxyCodeLine{00021\ \textcolor{keyword}{extern}\ PTR(Expr)\ parseAddend(std::istream\ \&in);}
+\DoxyCodeLine{00022\ \textcolor{keyword}{extern}\ PTR(Expr)\ parseVar(std::istream\ \&in);}
+\DoxyCodeLine{00023\ \textcolor{keyword}{extern}\ PTR(Expr)\ parseMulticand(std::istream\ \&in);}
+\DoxyCodeLine{00024\ \textcolor{keyword}{extern}\ PTR(Expr)\ parseKeyword(std::istream\&\ in);}
+\DoxyCodeLine{00025\ \textcolor{keyword}{extern}\ PTR(Expr)\ parseLet(std::istream\&\ in);}
+\DoxyCodeLine{00026\ \textcolor{keyword}{extern}\ PTR(Expr)\ parseTrue(std::istream\&\ in);}
+\DoxyCodeLine{00027\ \textcolor{keyword}{extern}\ PTR(Expr)\ parseFalse(std::istream\&\ in);}
+\DoxyCodeLine{00028\ \textcolor{keyword}{extern}\ PTR(Expr)\ parseIf(std::istream\&\ in);}
+\DoxyCodeLine{00029\ \textcolor{keyword}{extern}\ PTR(Expr)\ parseComparg(std::istream\&\ in);}
+\DoxyCodeLine{00030\ \textcolor{keyword}{extern}\ PTR(Expr)\ parseInner(std::istream\&\ in);}
+\DoxyCodeLine{00031\ \textcolor{keyword}{extern}\ PTR(Expr)\ parseFun(std::istream\&\ in);}
+
+\end{DoxyCode}
