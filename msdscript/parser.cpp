@@ -1,7 +1,7 @@
-#include "parser.hpp"
+#include "parser.h"
 #include <iostream>
-#include "Expr.hpp"
-#include "Val.hpp"
+#include "expr.h"
+#include "val.h"
 #include "pointers.h"
 /**
  *\file parser.cpp

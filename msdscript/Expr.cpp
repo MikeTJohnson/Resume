@@ -5,13 +5,12 @@
 //  Created by Michael Johnson on 1/19/23.
 //
 
-#include "Val.hpp"
-#include "Expr.hpp"
-#include "catch.h"
+#include "val.h"
+#include "expr.h"
 #include <sstream>
 #include <stdexcept>
 #include "pointers.h"
-#include "Env.hpp"
+#include "env.h"
 /**
  *\file Expr.cpp
  *\brief An object that represents a mathmatical expression
@@ -280,7 +279,7 @@ bool VarExpr::equals(PTR(Expr) e) {
  */
 PTR(Val) VarExpr::interp(PTR(Env) env) {
     return env->lookup(str);
-//    throw std::runtime_error("no value for variable");
+    //    throw std::runtime_error("no value for variable");
 }
 
 /**
@@ -382,7 +381,7 @@ bool _letExpr::equals(PTR(Expr) e) {
  *\return Whole number value of the evaluated let expression
  */
 PTR(Val) _letExpr::interp(PTR(Env) env) {
-//    return rhs->subst(str, lhs)->interp();
+    //    return rhs->subst(str, lhs)->interp();
     PTR(Val) lhsVal = lhs -> interp(env);
     PTR(Env) envReplace = NEW(ExtendedEnv)(str, lhsVal, env);
     return rhs -> interp(envReplace);

@@ -1,7 +1,7 @@
-#include "Expr.hpp"
-#include "Val.hpp"
+#include "expr.h"
+#include "val.h"
 #include "pointers.h"
-#include "Env.hpp"
+#include "env.h"
 
 /**
  *\file Val.cpp
