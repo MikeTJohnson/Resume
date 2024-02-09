@@ -11,6 +11,7 @@
         <Picker
                 x:Name="picker"
                 Title="Choose Part Number"
+                SelectedIndexChanged="onPickerSelectedIndexChanged"
                 MaximumWidthRequest="300"
                 />
 

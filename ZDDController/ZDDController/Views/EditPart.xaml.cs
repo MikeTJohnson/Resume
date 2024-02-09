@@ -2,6 +2,8 @@
 
 public partial class EditPart : ContentPage
 {
+
+
 	public EditPart()
 	{
 		InitializeComponent();
@@ -12,6 +14,32 @@ public partial class EditPart : ContentPage
     private void onHomeButtonClicked(object sender, EventArgs e)
     {
         Navigation.PopToRootAsync();
+    }
+
+    private void onPickerSelectedIndexChanged(object sender, EventArgs e)
+    {
+        var picker = (Picker)sender;
+        if (picker.SelectedIndex != -1)
+        {
+            Controllers.ManagerControllers manInstance = new Controllers.ManagerControllers();
+            string pn = (string)picker.SelectedItem;
+            DataClasses.Part part = manInstance.populateEditPart(pn);
+            ppmNum.Text = part.ppm.ToString();
+            rate.Text = part.rate.ToString();
+            ttfRate.Text = part.ttfRate.ToString();
+            if (part.bwi)
+            {
+                bwi.IsChecked = true;
+            }
+            else if (part.oring)
+            {
+                oring.IsChecked = true;
+            }
+            else if (part.special)
+            {
+                special.IsChecked = true;
+            }
+        }
     }
 
     private void onSubmitButtonClicked(object sender, EventArgs e)

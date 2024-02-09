@@ -1074,6 +1074,47 @@ namespace ZDDController.Controllers
             return status;
         }
 
+        public DataClasses.Part populateEditPart(string pNum)
+        {
+            DataClasses.Part ret = new DataClasses.Part();
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
+            {
+                connection.Open();
+                String query = "select * from parts where pNum = @pNum limit 1";
+
+                try
+                {
+                    using (MySqlCommand command = new MySqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@pNum", pNum);
+
+                        using (MySqlDataReader reader = command.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                ret.pNum = Convert.ToString(reader["pNum"]);
+                                ret.rate = Convert.ToDouble(reader["rate"]);
+                                ret.ttfRate = Convert.ToDouble(reader["ttfRate"]);
+                                ret.ppm = Convert.ToDouble(reader["expectedPPM"]);
+                                ret.bwi = Convert.ToBoolean(reader["bwi"]);
+                                ret.oring = Convert.ToBoolean(reader["oring"]);
+                                ret.special = Convert.ToBoolean(reader["special"]);
+                            }
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"An error occurred: {ex.Message}");
+                }
+                finally
+                {
+                    connection.Close();
+                }
+            }
+            return ret;
+        }
+
         public ManagerControllers()
 		{
 		}
