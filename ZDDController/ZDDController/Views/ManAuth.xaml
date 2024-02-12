@@ -4,7 +4,10 @@
              x:Class="ZDDController.Views.ManAuth"
              Title="ManAuth">
 
-    <VerticalStackLayout>
+    <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
 
         <Label 
             Text="Enter Manager ID"
