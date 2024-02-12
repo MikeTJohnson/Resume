@@ -47,8 +47,6 @@ public partial class EditPart : ContentPage
         float ppm = 0;
         float price = 0;
         float ttfPrice = 0;
-        //TODO handle null fields differently
-        //TODO how to change entry elements to hold the values of the picker selection query
         if (picker.SelectedIndex == -1)
         {
             DisplayAlert("Error", "Please choose a part number", "OK");

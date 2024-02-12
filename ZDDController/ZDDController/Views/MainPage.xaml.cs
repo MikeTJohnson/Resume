@@ -16,7 +16,7 @@ public partial class MainPage : ContentPage
 
     private void onManButtonClicked(object sender, EventArgs e)
     {
-        Navigation.PushAsync(new ManTools());
+        Navigation.PushAsync(new ManAuth());
     }
 }
 

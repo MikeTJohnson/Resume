@@ -1115,6 +1115,42 @@ namespace ZDDController.Controllers
             return ret;
         }
 
+        public string getPinHash(int eID)
+        {
+            string ret = "";
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
+            {
+                connection.Open();
+                String query = "select pinHash from employees where eID = @eID limit 1";
+
+                try
+                {
+                    using (MySqlCommand command = new MySqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@eID", eID);
+
+                        using (MySqlDataReader reader = command.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                ret = reader[0].ToString();
+                            }
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"An error occurred: {ex.Message}");
+                    ret = "failure";
+                }
+                finally
+                {
+                    connection.Close();
+                }
+            }
+            return ret;
+        }
+
         public ManagerControllers()
 		{
 		}

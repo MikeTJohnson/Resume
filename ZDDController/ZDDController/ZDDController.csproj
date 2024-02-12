@@ -61,11 +61,13 @@
 	  <None Remove="Platforms\Android\AndroidManifest.xml" />
 	  <None Remove="Controllers\" />
 	  <None Remove="DataClasses\" />
+	  <None Remove="Helpers\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Views\" />
 	  <Folder Include="Controllers\" />
 	  <Folder Include="DataClasses\" />
+	  <Folder Include="Helpers\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Compile Remove="Platforms\Android\MainApplication.cs" />

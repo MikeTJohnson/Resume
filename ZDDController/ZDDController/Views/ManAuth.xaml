@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ZDDController.Views.ManAuth"
+             Title="ManAuth">
+
+    <VerticalStackLayout>
+
+        <Label 
+            Text="Enter Manager ID"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Entry
+            x:Name="id"
+            Placeholder="ID"
+            MaximumWidthRequest="300"/>
+
+        <Label 
+            Text="Enter Manager PIN"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Entry
+            x:Name="pin"
+            Placeholder="PIN"
+            MaximumWidthRequest="300"/>
+
+        <Button
+                x:Name="submit"
+                Text="Submit"
+                SemanticProperties.Hint="checks the pin against the manager ID"
+                Clicked="onSubmitButtonClicked"
+                HorizontalOptions="Center"
+                MaximumWidthRequest="150"
+                MinimumWidthRequest="150"/>
+
+         <Button
+                x:Name="home"
+                Text="Home"
+                SemanticProperties.Hint="takes the user back to the main page"
+                Clicked="onHomeButtonClicked"
+                HorizontalOptions="End"
+                VerticalOptions="End"
+                />
+    </VerticalStackLayout>
+</ContentPage>
