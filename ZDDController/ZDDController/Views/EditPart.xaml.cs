@@ -94,14 +94,21 @@ public partial class EditPart : ContentPage
             {
                 DisplayAlert("Error", "Please enter a TFF rate value", "OK");
             }
+            if (!bwi.IsChecked && !oring.IsChecked && !special.IsChecked)
+            {
+                DisplayAlert("Error", "Please select a part type", "OK");
+            }
 
-            if (manInstance.editPart(picker.SelectedItem.ToString(), ppm, price, ttfPrice))
+            if (manInstance.editPart(picker.SelectedItem.ToString(), ppm, price, ttfPrice, bwi.IsChecked, oring.IsChecked, special.IsChecked))
             {
                 DisplayAlert("Success", "Part updated", "OK");
                 ppmNum.Text = string.Empty;
                 rate.Text = string.Empty;
                 picker.SelectedIndex = -1;
                 ttfRate.Text = ".165";
+                bwi.IsChecked = false;
+                oring.IsChecked = false;
+                special.IsChecked = false;
             }
             else
             {

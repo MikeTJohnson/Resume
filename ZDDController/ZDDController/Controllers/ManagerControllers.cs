@@ -134,14 +134,20 @@ namespace ZDDController.Controllers
 
         //------------------------------------------------
 
-        public bool editPart(String pNum, float ppm, float rate, float ttfRate)
+        public bool editPart(String pNum, float ppm, float rate, float ttfRate, bool bwi, bool oring, bool special)
         {
-            //TODO make a version of this method with rate or float or ppm being null
             bool status = false;
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
                 connection.Open();
-                string alterQuery = "update parts set rate = @rate, expectedPPM = @ppm, ttfRate = @ttfRate where pNum = @pNum";
+                string alterQuery = "update parts set " +
+                    "rate = @rate, " +
+                    "expectedPPM = @ppm, " +
+                    "ttfRate = @ttfRate, " +
+                    "bwi = @bwi, " +
+                    "oring = @oring, " +
+                    "special = @special " +
+                    "where pNum = @pNum";
 
                 try
                 {
@@ -151,6 +157,10 @@ namespace ZDDController.Controllers
                         command.Parameters.AddWithValue("@rate", rate);
                         command.Parameters.AddWithValue("@ppm", ppm);
                         command.Parameters.AddWithValue("@ttfRate", ttfRate);
+                        command.Parameters.AddWithValue("@bwi", bwi);
+                        command.Parameters.AddWithValue("@oring", oring);
+                        command.Parameters.AddWithValue("@special", special);
+
 
                         command.ExecuteNonQuery();
                     }

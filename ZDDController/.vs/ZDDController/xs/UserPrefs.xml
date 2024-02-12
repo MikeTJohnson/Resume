@@ -1,11 +1,12 @@
 ﻿<Properties StartupConfiguration="{B57868CC-7147-46EE-8445-01B4DE3F3F0E}|Default">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.ZDDController PreferredExecutionTarget="MyAppleMacCatalystID" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.ZDDController PreferredExecutionTarget="MyAppleMacCatalystID" />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workbench ActiveDocument="ZDDController/Controllers/ManagerControllers.cs">
     <Files>
       <File FileName="ZDDController/AppShell.xaml" />
@@ -16,18 +17,18 @@
       <File FileName="ZDDController/Resources/AppIcon/appicon.svg" />
       <File FileName="ZDDController/MauiProgram.cs" />
       <File FileName="ZDDController/App.xaml.cs" />
-      <File FileName="ZDDController/Views/GenTools.xaml" />
+      <File FileName="ZDDController/Views/GenTools.xaml" Line="1" Column="1" />
       <File FileName="ZDDController/Views/GenTools.xaml.cs" />
-      <File FileName="ZDDController/Views/MainPage.xaml" />
-      <File FileName="ZDDController/Views/MainPage.xaml.cs" />
+      <File FileName="ZDDController/Views/MainPage.xaml" Line="1" Column="1" />
+      <File FileName="ZDDController/Views/MainPage.xaml.cs" Line="16" Column="1" />
       <File FileName="ZDDController/Views/ManTools.xaml" />
       <File FileName="ZDDController/Views/ManTools.xaml.cs" />
       <File FileName="ZDDController/Views/StartSort.xaml" />
-      <File FileName="ZDDController/Views/EndSort.xaml" />
+      <File FileName="ZDDController/Views/EndSort.xaml" Line="1" Column="1" />
       <File FileName="ZDDController/Views/EndSort.xaml.cs" />
-      <File FileName="ZDDController/Views/StartSort.xaml.cs" />
+      <File FileName="ZDDController/Views/StartSort.xaml.cs" Line="36" Column="14" />
       <File FileName="ZDDController/Views/StartSpecialSort.xaml" />
-      <File FileName="ZDDController/Views/EndSpecialSort.xaml" />
+      <File FileName="ZDDController/Views/EndSpecialSort.xaml" Line="1" Column="1" />
       <File FileName="ZDDController/Views/StartSpecialSort.xaml.cs" />
       <File FileName="ZDDController/Views/DailyReport.xaml" />
       <File FileName="ZDDController/Views/PayrollReport.xaml" />
@@ -36,7 +37,7 @@
       <File FileName="ZDDController/Views/SampleSort.xaml" />
       <File FileName="ZDDController/Views/AddEmployee.xaml" />
       <File FileName="ZDDController/Views/AddInventory.xaml" />
-      <File FileName="ZDDController/Views/EditEmployee.xaml" />
+      <File FileName="ZDDController/Views/EditEmployee.xaml" Line="1" Column="1" />
       <File FileName="ZDDController/Views/DailyReport.xaml.cs" />
       <File FileName="ZDDController/Views/PayrollReport.xaml.cs" />
       <File FileName="ZDDController/Views/SampleSort.xaml.cs" />
@@ -45,39 +46,45 @@
       <File FileName="ZDDController/Views/EditEmployee.xaml.cs" />
       <File FileName="ZDDController/Views/AddInventory.xaml.cs" />
       <File FileName="ZDDController/Views/AddEmployee.xaml.cs" />
-      <File FileName="ZDDController/Views/NewPart.xaml" />
-      <File FileName="ZDDController/Views/EditPart.xaml" />
-      <File FileName="ZDDController/Views/NewPart.xaml.cs" />
-      <File FileName="ZDDController/Views/EditPart.xaml.cs" />
+      <File FileName="ZDDController/Views/NewPart.xaml" Line="13" Column="43" />
+      <File FileName="ZDDController/Views/EditPart.xaml" Line="8" Column="23" />
+      <File FileName="ZDDController/Views/NewPart.xaml.cs" Line="13" Column="6" />
+      <File FileName="ZDDController/Views/EditPart.xaml.cs" Line="107" Column="43" />
       <File FileName="ZDDController/AppShell.xaml.cs" />
       <File FileName="ZDDController/Views/EndSpecialSort.xaml.cs" />
-      <File FileName="ZDDController/Controllers/ManagerControllers.cs" Line="2" Column="19" />
-      <File FileName="ZDDController/Controllers/GeneralControllers.cs" />
-      <File FileName="ZDDController/Controllers/UniversalControllers.cs" />
-      <File FileName="ZDDController/Views/NewInventory.xaml" />
+      <File FileName="ZDDController/Controllers/ManagerControllers.cs" Line="146" Column="45" />
+      <File FileName="ZDDController/Controllers/GeneralControllers.cs" Line="1" Column="1" />
+      <File FileName="ZDDController/Controllers/UniversalControllers.cs" Line="1" Column="1" />
+      <File FileName="ZDDController/Views/NewInventory.xaml" Line="42" Column="19" />
       <File FileName="ZDDController/Views/NewInventory.xaml.cs" />
       <File FileName="ZDDController/Views/AddTTF.xaml" />
-      <File FileName="ZDDController/Views/AddTTF.xaml.cs" />
-      <File FileName="ZDDController/DataClasses/Payroll.cs" />
-      <File FileName="ZDDController/DataClasses/Billing.cs" />
+      <File FileName="ZDDController/Views/AddTTF.xaml.cs" Line="1" Column="1" />
+      <File FileName="ZDDController/DataClasses/Payroll.cs" Line="7" Column="42" />
+      <File FileName="ZDDController/DataClasses/Billing.cs" Line="1" Column="1" />
       <File FileName="../../../../usr/local/share/dotnet/packs/Microsoft.Maui.Resizetizer.Sdk/7.0.101/targets/Microsoft.Maui.Resizetizer.targets" />
       <File FileName="../../.nuget/NuGet/NuGet.Config" />
+      <File FileName="ZDDController/DataClasses/Part.cs" Line="7" Column="40" />
+      <File FileName="ZDDController/DataClasses/Sort.cs" Line="1" Column="1" />
+      <File FileName="ZDDController/Views/ManAuth.xaml" Line="33" Column="47" />
+      <File FileName="ZDDController/Views/ManAuth.xaml.cs" Line="28" Column="41" />
+      <File FileName="ZDDController/Helpers/Functions.cs" Line="3" Column="19" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="ZDDController" expanded="True">
+          <Node name="ZDDController">
             <Node name="NuGet.Config files" expanded="True" />
-            <Node name="ZDDController" expanded="True">
-              <Node name="Controllers" expanded="True">
+            <Node name="ZDDController">
+              <Node name="Controllers">
                 <Node name="ManagerControllers.cs" selected="True" />
               </Node>
-              <Node name="Views" expanded="True" />
+              <Node name="Views">
+                <Node name="EditPart.xaml" expanded="True" />
+              </Node>
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
 </Properties>
