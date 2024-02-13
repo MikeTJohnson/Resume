@@ -9,6 +9,7 @@ namespace ZDDController.DataClasses
         public int ttf { get; set; }
         public decimal ttfRate { get; set; }
         public int qty { get; set; }
+        public string fo { get; set; }
     }
 }
 

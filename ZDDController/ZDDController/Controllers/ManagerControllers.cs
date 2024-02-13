@@ -415,13 +415,13 @@ namespace ZDDController.Controllers
                     }
 
                     //get the information for standard sorts and store it in a list
-                    string billingQuery = "select sID, pNum, rate, TTF, ttfRate, quantity from " +
+                    string billingQuery = "select sID, pNum, rate, TTF, ttfRate, quantity, FO from " +
                         "sorts natural join parts where " +
                         "finished = true and " +
                         "checkManager is not null and " +
                         "dateFinished between @beginDate and @endDate and " +
                         "TTF = 0 " +
-                        "order by pNum";
+                        "order by special, oring, bwi, pNum";
 
                     using (MySqlCommand billingCommand = new MySqlCommand(billingQuery, connection, transaction))
                     {
@@ -438,7 +438,8 @@ namespace ZDDController.Controllers
                                     rate = Convert.ToDecimal(reader["rate"]),
                                     ttf = Convert.ToInt32(reader["TTF"]),
                                     ttfRate = Convert.ToDecimal(reader["ttfRate"]),
-                                    qty = Convert.ToInt32(reader["quantity"])
+                                    qty = Convert.ToInt32(reader["quantity"]),
+                                    fo = Convert.ToString(reader["FO"])
                                 };
                                 billingInfo.Add(info);
                             }
@@ -446,13 +447,13 @@ namespace ZDDController.Controllers
                     }
 
                     //get the information for ttf sorts and store it in a list
-                    string ttfBillingQuery = "select sID, pNum, rate, TTF, ttfRate, quantity from " +
+                    string ttfBillingQuery = "select sID, pNum, rate, TTF, ttfRate, quantity, FO from " +
                         "sorts natural join parts where " +
                         "finished = true and " +
                         "checkManager is not null and " +
                         "dateFinished between @beginDate and @endDate and " +
                         "TTF = 1 " +
-                        "order by pNum";
+                        "order by special, oring, bwi, pNum";
 
                     using (MySqlCommand ttfBillingCommand = new MySqlCommand(ttfBillingQuery, connection, transaction))
                     {
@@ -469,7 +470,8 @@ namespace ZDDController.Controllers
                                     rate = Convert.ToDecimal(reader["rate"]),
                                     ttf = Convert.ToInt32(reader["TTF"]),
                                     ttfRate = Convert.ToDecimal(reader["ttfRate"]),
-                                    qty = Convert.ToInt32(reader["quantity"])
+                                    qty = Convert.ToInt32(reader["quantity"]),
+                                    fo = Convert.ToString(reader["FO"])
                                 };
                                 ttfBillingInfo.Add(info);
                             }
@@ -512,6 +514,9 @@ namespace ZDDController.Controllers
                     }
 
                     //billing report
+                    //set up initial string for billing FOs report
+                    string billingFos = "Standard FOs \n";
+
                     //set up initial string for normal sorts
                     string billingReportString = "Part Number, Quantity, Rate \n";
                     
@@ -528,6 +533,8 @@ namespace ZDDController.Controllers
                             if (lastPNum == row.pNum)
                             {
                                 runningQty += row.qty;
+                                //add each standard fo to the billing fo string
+                                billingFos += row.pNum + "        " + row.fo + "\n";
                             }
                             else
                             {
@@ -535,6 +542,8 @@ namespace ZDDController.Controllers
                                 runningQty = row.qty;
                                 rate = row.rate;
                                 lastPNum = row.pNum;
+                                //even if the part number is different than the one before, add the fo to the billing fo string
+                                billingFos += row.pNum + "        " + row.fo + "\n";
                             }
                         }
                         //get the final row information
@@ -550,6 +559,10 @@ namespace ZDDController.Controllers
                     //get the string for the ttf sorts file
                     if (ttfBillingInfo.Count > 0)
                     {
+                        //add a dividing line and header to the billing fos string for ttf fos
+                        billingFos += "\n";
+                        billingFos += "TTF FOs \n";
+
                         //initialized necessary variables
                         string lastTTF = ttfBillingInfo[0].pNum;
                         decimal ttfRate = ttfBillingInfo[0].ttfRate;
@@ -560,6 +573,8 @@ namespace ZDDController.Controllers
                             if (lastTTF == row.pNum)
                             {
                                 runningTTFQty += row.qty;
+                                //add the ttf fos to the billing fos string
+                                billingFos += row.pNum + "        " + row.fo + "\n";
                             }
                             else
                             {
@@ -567,6 +582,8 @@ namespace ZDDController.Controllers
                                 runningTTFQty = row.qty;
                                 ttfRate = row.rate;
                                 lastTTF = row.pNum;
+                                //add the fos to the billing fos string even if different
+                                billingFos += row.pNum + "        " + row.fo + "\n";
                             }
                         }
                         //get the final row information
@@ -586,6 +603,12 @@ namespace ZDDController.Controllers
                     using (StreamWriter outputFile = new StreamWriter(Path.Combine(billingDocPath, "normalBilling.csv")))
                     {
                         outputFile.WriteLine(billingReportString);
+                    }
+
+                    string billingFoDocPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+                    using (StreamWriter outputFile = new StreamWriter(Path.Combine(billingFoDocPath, "billingFos.txt")))
+                    {
+                        outputFile.WriteLine(billingFos);
                     }
 
                     status = true;
